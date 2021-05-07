@@ -1,0 +1,92 @@
+#slider {
+  position: relative;
+  color: white;
+  background-color: white;
+}
+
+#slider img {
+  max-height: 45vw;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide-container {
+  display: none;
+}
+
+.back-slide,
+.forward-slide {
+  position: absolute;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+@media screen and (max-width: 839px) {
+  .back-slide,
+  .forward-slide {
+    top: 12vw;
+  }
+}
+@media screen and (min-width: 840px) {
+  .back-slide,
+  .forward-slide {
+    top: 17vw;
+  }
+}
+
+.forward-slide {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.back-slide:hover, .forward-slide:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slider-caption {
+  color: black;
+  position: absolute;
+  top: 18vw;
+  left: 10vw;
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 0.4vw 1vw;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 839px) {
+  .slider-caption {
+      font-size: 4vw;
+  }
+}
+@media screen and (min-width: 840px) {
+  .slider-caption {
+      font-size: 3vw;
+  }
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 2vw;
+  left: 37.5vw;
+}
+
+.dots {
+  cursor: pointer;
+  height: 2vw;
+  width: 2vw;
+  margin: 0 0.2vw;
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: rgb(255, 255, 255, 1);
+}
