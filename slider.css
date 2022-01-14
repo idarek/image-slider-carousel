@@ -7,6 +7,7 @@
 #slider img {
   max-height: 45vw;
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
