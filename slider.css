@@ -78,6 +78,7 @@
 }
 
 .dots {
+  position: relative;
   cursor: pointer;
   height: 2vw;
   width: 2vw;
